@@ -25,7 +25,7 @@ import (
 func main() {
 	res := 0
 	r := calc()
-	b := readFile("input.txt")
+	b := readFile("01.txt")
 	steps := bytesToSteps(b, ", ")
 	for _, s := range steps {
 		res = r(s)
