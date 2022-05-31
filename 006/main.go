@@ -39,6 +39,7 @@ func check(r io.Reader) int {
 	reader := bufio.NewReader(r)
 	n := 0
 	line, _, err := reader.ReadLine()
+
 	for ; err != io.EOF; line, _, err = reader.ReadLine() {
 		if err != nil {
 			fmt.Println("can not read file")
